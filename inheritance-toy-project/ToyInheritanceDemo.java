@@ -65,7 +65,7 @@ class Toy { //we create our supperclass Toy that will hold 5 fields that charact
          this.soft = newSoft; //we change the field's current value for the new one gotten as the method's argument
      }
      
-    public void PrintToyInfo() { //Method to display toy info (can be overridden)
+    public void printToyInfo() { //Method to display toy info (can be overridden)
         System.out.println("Toy: " + getName()); //We print out the toy's name using its accessor method
         System.out.println("Manufacturer: " + getManufacturer()); //We print out the toy's manufacturer using its accessor method
         System.out.println("Age Range: " + getAgeRange()); //We print out the toy's age range using its accessor method
@@ -111,7 +111,7 @@ class TeddyBear extends Toy{ //we create a subclass that extends from the Toy cl
         this.clothes = newClothes; //we change the field's current value for the new one gotten as the method's argument
     }
     @Override
-    public void PrintToyInfo() { //Method to display toy info (overriddes the one from superclass Toy)
+    public void printToyInfo() { //Method to display toy info (overriddes the one from superclass Toy)
         System.out.println("Toy: teddy bear"); //We print out the type of toy according to our object
         System.out.println("Teddy bear: " + getName()); //We print out the toy's name using its accessor method
         System.out.println("Color: " + getColor()); //We print out the toy's color using its accessor method
@@ -163,7 +163,7 @@ class VideoGame extends Toy{ //we create a subclass that extends from the Toy cl
         this.needsInternet = newNeedsInternet; //we change the field's current value for the new one gotten as the method's argument
     }
     @Override
-    public void PrintToyInfo() { //Method to display toy info (overriddes the one from superclass Toy)
+    public void printToyInfo() { //Method to display toy info (overriddes the one from superclass Toy)
         System.out.println("Toy: videogame"); //We print out the type of toy according to our object
         System.out.println("Videogame: " + getName()); //We print out the toy's name using its accessor method
         System.out.println("In which console you can play it: " + getConsole()); //We print out in which console you can play this game using its accessor method
@@ -214,7 +214,7 @@ class Ball extends Toy{ //we create a subclass that extends from the Toy class a
         this.needsMore = newNeedsMore; //we change the field's current value for the new one gotten as the method's argument
     }
     @Override
-    public void PrintToyInfo() { //Method to display toy info (overriddes the one from superclass Toy)
+    public void printToyInfo() { //Method to display toy info (overriddes the one from superclass Toy)
         System.out.println("Toy: ball"); //We print out the type of toy according to our object
         System.out.println("Ball: " + getName()); //We print out the toy's name using its accessor method
         System.out.println("The main sport you can play with it: " + getSport()); //We print out the sport you can play with the ball using its accessor method
@@ -311,16 +311,17 @@ public class W12ALuciaMartinInheritance { //start of main class
         
         System.out.println(""); //we print out an empty line for better structure and order in the output
         System.out.println("This is the information about your toy "+teddy.getName()+":"); //we print information about what we are about to display in the output
-        teddy.PrintToyInfo(); //we call the printToyInfo method for our teddy object
+        teddy.printToyInfo(); //we call the printToyInfo method for our teddy object
         System.out.println(""); //we print out an empty line for better structure and order in the output
         System.out.println("This is the information about your toy "+videogame.getName()+":"); //we print information about what we are about to display in the output
-        videogame.PrintToyInfo(); //we call the printToyInfo method for our videogame object
+        videogame.printToyInfo(); //we call the printToyInfo method for our videogame object
         System.out.println(""); //we print out an empty line for better structure and order in the output
         System.out.println("This is the information about your toy "+ball.getName()+":"); //we print information about what we are about to display in the output
-        ball.PrintToyInfo(); //we call the printToyInfo method for our ball object
+        ball.printToyInfo(); //we call the printToyInfo method for our ball object
         System.out.println(""); //we print out an empty line for better structure and order in the output
     }
     
 }
+
 
 
