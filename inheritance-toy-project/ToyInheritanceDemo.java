@@ -74,13 +74,13 @@ class Toy { //we create our supperclass Toy that will hold 5 fields that charact
     }
 }
 
-class teddyBear extends Toy{ //we create a subclass that extends from the Toy class and its for the toys that are teddy bears
+class TeddyBear extends Toy{ //we create a subclass that extends from the Toy class and its for the toys that are teddy bears
     private String color; //private field that holds the teddy bear's color
     private String size; //private field that holds the teddy bear's size
     private boolean clothes; //private field that defines if our teddy bear object has clothes or not
     
      //the following line is my constructor that creates a teddyBear object
-    public teddyBear(String manufacturer, String name, String ageRange, double price, boolean soft, String color, String size, boolean clothes) {
+    public TeddyBear(String manufacturer, String name, String ageRange, double price, boolean soft, String color, String size, boolean clothes) {
         super(manufacturer, name, ageRange, price, soft); //we use inheritance to get the 5 fields from the superclass Toy's constructors
         this.color = color; //we initialize our color field
         this.size = size; //we initialize our size field
@@ -126,13 +126,13 @@ class teddyBear extends Toy{ //we create a subclass that extends from the Toy cl
     } 
 }
     
-class videoGame extends Toy{ //we create a subclass that extends from the Toy class and its for the toys that are videogames
+class VideoGame extends Toy{ //we create a subclass that extends from the Toy class and its for the toys that are videogames
     private String console; //private field that holds in which console can the videogame be played
     private int year; //private field that holds the videogame's year of release
     private boolean needsInternet; //private field that defines if our videogame object needs internet to be able to play or not
     
     //the following line is my constructor that creates a videoGame object
-    public videoGame(String manufacturer, String name, String ageRange, double price, boolean soft, String console, int year, boolean needsInternet) {
+    public VideoGame(String manufacturer, String name, String ageRange, double price, boolean soft, String console, int year, boolean needsInternet) {
         super(manufacturer, name, ageRange, price, soft); //we use inheritance to get the 5 fields from the superclass Toy's constructors
         this.console = console; //we initialize our console field
         this.year = year; //we initialize our year field
@@ -177,13 +177,13 @@ class videoGame extends Toy{ //we create a subclass that extends from the Toy cl
     } 
 }
 
-class ball extends Toy{ //we create a subclass that extends from the Toy class and its for the toys that are balls
+class Ball extends Toy{ //we create a subclass that extends from the Toy class and its for the toys that are balls
     private String sport; //private field that holds which sport you can play with the ball
     private String quality; //private field that holds the ball's quality
     private boolean needsMore; //private field that defines if we need more equipment to be able to play with the ball or not
     
     //the following line is my constructor that creates a ball object
-    public ball(String manufacturer, String name, String ageRange, double price, boolean soft, String sport, String quality, boolean needMore) {
+    public Ball(String manufacturer, String name, String ageRange, double price, boolean soft, String sport, String quality, boolean needMore) {
         super(manufacturer, name, ageRange, price, soft); //we use inheritance to get the 5 fields from the superclass Toy's constructors
         this.sport = sport; //we initialize our sport field
         this.quality = quality; //we initialize our quality field
@@ -322,3 +322,4 @@ public class W12ALuciaMartinInheritance { //start of main class
     }
     
 }
+
