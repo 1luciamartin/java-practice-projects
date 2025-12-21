@@ -183,7 +183,7 @@ class Ball extends Toy{ //we create a subclass that extends from the Toy class a
     private boolean needsMore; //private field that defines if we need more equipment to be able to play with the ball or not
     
     //the following line is my constructor that creates a ball object
-    public Ball(String manufacturer, String name, String ageRange, double price, boolean soft, String sport, String quality, boolean needMore) {
+    public Ball(String manufacturer, String name, String ageRange, double price, boolean soft, String sport, String quality, boolean needsMore) {
         super(manufacturer, name, ageRange, price, soft); //we use inheritance to get the 5 fields from the superclass Toy's constructors
         this.sport = sport; //we initialize our sport field
         this.quality = quality; //we initialize our quality field
@@ -322,6 +322,7 @@ public class W12ALuciaMartinInheritance { //start of main class
     }
     
 }
+
 
 
 
