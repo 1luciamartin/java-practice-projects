@@ -12,11 +12,11 @@ import java.util.Scanner; //we import the necesary library scanner for the progr
  */
 
 class Toy { //we create our supperclass Toy that will hold 5 fields that characterize Toy objects
-    public String manufacturer; //public field that stores the name of the toy's manufacturer
-    public String name; //public field that stores the name of the toy
-    public String ageRange; //public field that stores the toy's appropiate age range
-    public double price; // public fields that stores the toy's price
-    public boolean soft; //private field that stores if the toy is soft or not
+    private String manufacturer; //public field that stores the name of the toy's manufacturer
+    private String name; //public field that stores the name of the toy
+    private String ageRange; //public field that stores the toy's appropiate age range
+    private double price; // public fields that stores the toy's price
+    private boolean soft; //private field that stores if the toy is soft or not
    
     public Toy (String manufacturer, String name, String ageRange, double price, boolean soft){ //this is my constructor that creates a Toy object
         this.manufacturer = manufacturer; //we initialize our manufacturer field
@@ -237,9 +237,9 @@ public class W12ALuciaMartinInheritance { //start of main class
         
         /*in the following three lines, we will create three different objects for our 3 different subclasses with some initial values that can
         be changed by hte user later in this main method (with our mutator methods*/
-        teddyBear teddy = new teddyBear("Build-A-Bear", "Tom", "For everyone (no age range)", 19.99 , true, "brown", "big", true);
-        videoGame videogame = new videoGame("EA Sports", "Fifa24", "For everyone (no age range)", 69.69, false, "PlayStation or XBox", 2024, false);
-        ball ball = new ball ("Adidas", "Basketball", "5+ years-old", 10.0, false, "basketball", "really good", false);
+        TeddyBear teddy = new TeddyBear("Build-A-Bear", "Tom", "For everyone (no age range)", 19.99 , true, "brown", "big", true);
+        VideoGame videogame = new VideoGame("EA Sports", "Fifa24", "For everyone (no age range)", 69.69, false, "PlayStation or XBox", 2024, false);
+        Ball ball = new Ball ("Adidas", "Basketball", "5+ years-old", 10.0, false, "basketball", "really good", false);
     
         System.out.println("Give me the information about your teddy bear toy: "); //we ask for input to change the fields of our teddyBear object
         System.out.println("Name: "); //we ask for the name
@@ -322,4 +322,5 @@ public class W12ALuciaMartinInheritance { //start of main class
     }
     
 }
+
 
