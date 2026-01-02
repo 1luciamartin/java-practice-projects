@@ -1,13 +1,19 @@
 ## Toy Inheritance Project
-This project demonstrates object-oriented programming concepts in Java using an inheritance hierarchy of toy types.
+This is a small Java project where I practice object-oriented programming by
+building an inheritance hierarchy for different types of toys.
+
 ## Description
-A base `Toy` class defines common attributes and behaviors shared by all toys. Multiple subclasses extend this base class to represent specific toy types, each with its own characteristics.
+The project starts with a base `Toy` class that contains the common fields and
+behaviors shared by all toys. Then, several subclasses extend `Toy` and add
+their own attributes and behavior to represent more specific toy types.
+
 ## Concepts Demonstrated
-- Inheritance
-- Method overriding
-- Constructors
-- Encapsulation
-- Polymorphism
-- Object-oriented programming
+- inheritance and class hierarchies
+- constructors and object creation
+- method overriding
+- encapsulation and private fields
+- polymorphism and shared behavior
+
 ## How to Run
-Compile and run the main Java file using any standard Java IDE or the command line.
+Compile and run the main Java file in any standard Java IDE (such as IntelliJ,
+Eclipse, or NetBeans) or using the command line Java compiler.
