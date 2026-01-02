@@ -1,3 +1,7 @@
+// Multicalculadora
+// Open-ended school project (2022), written at age 17
+// Console-based multi-function calculator with a text menu (in Spanish)
+
 import java.util.Scanner;
 
 public class Main
