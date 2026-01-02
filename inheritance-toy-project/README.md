@@ -1,6 +1,7 @@
 ## Toy Inheritance Project
 This is a small Java project where I practice object-oriented programming by
 building an inheritance hierarchy for different types of toys.
+(This project was created for learning and practice purposes.)
 
 ## Description
 The project starts with a base `Toy` class that contains the common fields and
